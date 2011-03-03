@@ -1,0 +1,10 @@
+body { 
+  background : url(/images/background.jpg);
+  text-align : center;
+}
+
+#container {
+  margin : 0 auto;
+  text-align : left;
+  width : 960px;
+}

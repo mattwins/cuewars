@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @league.name %>
+</p>
+
+<p>
+  <b>Start:</b>
+  <%= @league.start %>
+</p>
+
+<p>
+  <b>End:</b>
+  <%= @league.end %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @league.description %>
+</p>
+
+<% unless @league.players.empty? %>
+  <p>
+    <b>Players:</b>
+    <ul>
+    <% for player in @league.players %>
+      <li><%= player.name %></li>
+    <% end %>
+    </ul>
+  </p>
+<% end -%>
+
+
+<%= link_to 'Edit', edit_admin_league_path(@league) %> |
+<%= link_to 'Back', admin_leagues_path %>

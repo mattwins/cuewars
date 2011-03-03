@@ -1,0 +1,29 @@
+<h1>Listing leagues</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Start</th>
+    <th>End</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @leagues.each do |league| %>
+  <tr>
+    <td><%= league.name %></td>
+    <td><%= league.start %></td>
+    <td><%= league.end %></td>
+    <td><%= league.description %></td>
+    <td><%= link_to 'Show', [:admin, league] %></td>
+    <td><%= link_to 'Edit', edit_admin_league_path(league) %></td>
+    <td><%= link_to 'Destroy', [:admin, league], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New League', new_admin_league_path %>
