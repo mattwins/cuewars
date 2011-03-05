@@ -1,27 +1,290 @@
-/* reset browsers */
-* { padding:0; margin:0; }
-p { padding: 0 0 15px 0; }
-img, a img { border: 0; }
-ul li { list-style: none; }
-:focus { -moz-outline-style: none; }
-body { -webkit-text-size-adjust: none; }
-
-
 /* styles */
+	
+html body div.clear,html body
+span.clear {
+  background : none;
+  border : 0;
+  clear : both;
+  display : block;
+  float : none;
+  font-size : 0;
+  margin : 0;
+  padding : 0;
+  overflow : hidden;
+  visibility : hidden;
+  width : 0;
+  height : 0 }
+
+.clearfix:after {
+  clear : both;
+  content : '.';
+  display : block;
+  visibility : hidden;
+  height : 0 }
+
+.clearfix {
+  display : inline-block }
+
+* html
+.clearfix {
+  height : 1% }
+
+.clearfix {
+  display : block }
+
 body {
-  background : #fff; /* url(/images/background.jpg)*/;	
-  font-family: "Lucida Grande", Verdana, sans-serif;
-  text-align : center; }
+  background : #463935 }
 
-.clear { clear: both; }
+#wrapper, 
+#wrapper
+p {
+  color : #cbc4c2;
+  font-family : "Helvetica Neue",arial;
+  font-weight : 300 }
 
-#container {
-  margin : 0 auto;
-  text-align : left;
-  width : 960px; }
+h1,h2,h3,h4,h5,h6 {
+  margin : 0;
+  padding : 0;
+  line-height : 1em;
+  color : #fff;
+  margin-bottom : 0.5em }
+
+p {
+  font-size : 14px;
+  line-height : 21px }
+
+a:link,a:visited {
+  color : #73d2b7 }
+
+a:hover {
+  text-decoration : none }
+
+strong {
+  font-weight : bold }
 
 #top_strip {
-	background : #e54a4a;
-	height : 100px;
-	width : 100%; }
+  background : #251d1b;
+  height : 24px;
+  font-size : 11px;
+  padding-top : 6px;
+  letter-spacing : 0.5px }
+
+#top_strip, #top_strip
+a {
+  color : #81756d }
+
+#top_strip a {
+  text-decoration : none;
+  padding : 6px 0 8px 0 }
+
+#top_strip a:hover {
+  color : #73d2b7 }
+
+#top_strip span {
+  margin : 0 4px;
+  color : #444 }
+
+#top-contact {
+  text-align : right }
+
+#content,#footer {
+  margin-bottom : 1.5em }
+
+#header {
+  background : #3a2e2b }
+
+#logo {
+  height : 114px }
+
+#logo h1, #logo
+h2 {
+  text-indent : -9999px }
+
+#logo
+a {
+  height : 114px;
+  width : 220px;
+  display : block;
+  background : url('/images/logo.png') no-repeat }
+
+#logo a:hover {
+  background-position : bottom }
+
+#nav {
+  height : 114px;
+  display : block;
+  float : right;
+  margin : 0 -15px 0 0 }
+
+#nav ul {
+  margin : 30px 0 0 0;
+  padding : 0 }
+
+#nav li {
+  display : inline;
+  margin : 0;
+  padding : 0 }
+
+#nav li a {
+  color : #cbc5c3;
+  display : block;
+  border-right : 1px solid #503e3e;
+  float : left;
+  font-size : 18px;
+  text-transform : uppercase;
+  text-decoration : none;
+  height : 50px;
+  line-height : 50px;
+  cursor : pointer;
+  padding : 0px 25px 0px 25px; }
+
+#nav li.last a {
+	border-right : none; }
 	
+#nav li a:hover {
+	background : #463935;
+	color : #afe8db; }
+
+#footer {
+  padding : 0.65em 0 80px 0;
+  border-top : 1px dotted #61514c;
+  margin : 40px
+auto 100px auto }
+
+#content a:hover {
+	background : none;
+	text-decoration : none;
+}
+
+
+#footer
+p {
+  color : #796761;
+  font-size : 12px;
+  line-height : 17px }
+
+#footer
+a {
+  color : #796761 }
+
+#footer a:hover {
+  color : #73D2B7 }
+
+#footer
+strong {
+  font-weight : bold }
+
+#ft-nav ul,
+#ft-nav
+li {
+  margin : 0;
+  padding : 0;
+  list-style : none }
+
+#ft-nav a {
+  display : block;
+  padding : 1px
+8px;
+  text-decoration : none }
+
+#ft-nav a:hover {
+  background : #413430 }
+
+.post {
+  margin : 1.5em 0 }
+
+.post h2 {
+  margin-bottom : 0.5em }
+
+.post img {
+  margin-bottom : 5px }
+
+.post img.hidden-ss {
+  display : none }
+
+#smart img {
+  margin : 15px
+0 30px 0 }
+
+#smart
+h1 {
+  text-indent : -9999px }
+
+p.lead {
+  font-size : 24px;
+  font-weight : normal }
+
+#impact_banner {
+  height : 317px;
+  background : url('/images/impact_bg.png') repeat-x;
+  position : relative }
+
+#mission {
+  margin : 60px
+0 0 0 }
+
+.aktt_tweets ul,
+.aktt_tweets
+li {
+  padding : 0;
+  margin : 0;
+  list-style : none;
+  line-height : 16px }
+
+.aktt_tweets
+ul {
+  margin-top : -10px;
+  position : relative }
+
+.aktt_tweets
+li {
+  border-bottom : 1px solid #3a2e2b;
+  padding : 10px
+0 }
+
+li.aktt_more_updates {
+  display : none }
+
+#main.index #content #mainblurb h2 {
+  font-size : 34px;
+  font-weight : bold;
+  position : relative;
+  margin-top : -8px }
+
+#mainblurb p {
+  font-size : 18px;
+  line-height : 26px;
+  letter-spacing : 0.25px }
+
+#options a:hover {
+  background-position : bottom }
+
+#main.index #content {
+  margin : 60px 0 0 0 }
+
+#main.index h2 {
+  font-weight : 300;
+  font-size : 24px;
+  margin-bottom : 10px }
+
+#pitch {
+  padding : 50px
+0 5px 0;
+  display : block }
+
+#tweets {
+  padding-left : 10px }
+
+p.testimonial {
+  background : url('/wp-content/themes/thingsthatarebrown.com/img/testimonial-bg.png') bottom left no-repeat;
+  padding : 20px;
+  padding-bottom : 40px;
+  font-size : 13px;
+  line-height : 19px;
+  margin-bottom : 10px }
+
+img.avatar {
+  float : left;
+  border : solid #251d1b;
+  border-width : 0 4px 4px 0;
+  margin : 5px 20px 75px -30px }
