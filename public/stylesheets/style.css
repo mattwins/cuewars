@@ -216,9 +216,15 @@ p.lead {
   background : url('/images/impact_bg.png') repeat-x;
   position : relative; }
 
-#impact_banner img {
-  margin : -4px 0 0 0; }
+.impact_image_container {
+	height : 316px;
+	position : relative;
+}
 
+#impact_banner img {
+  position : absolute;
+  bottom : 0px;
+  right : -15px; }
 
 #mission {
   margin : 45px 0 0 0 }
