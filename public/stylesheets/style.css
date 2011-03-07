@@ -136,7 +136,8 @@ strong {
   padding : 0px 25px 0px 25px; }
 
 #nav li.last a {
-	border-right : none; }
+	border-right : none;
+	padding-right : 0; }
 	
 #nav li a:hover {
 	background : #4b5060;
@@ -224,7 +225,7 @@ p.lead {
 #impact_banner img {
   position : absolute;
   bottom : 0px;
-  right : -15px; }
+  right : -45px; }
 
 #mission {
   margin : 45px 0 0 0 }
