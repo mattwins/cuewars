@@ -1,5 +1,7 @@
 Cuewars::Application.routes.draw do
-    
+
+  devise_for :players
+
   namespace "admin" do
     root :to => :index
     resources :leagues, :players
