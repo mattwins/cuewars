@@ -9,11 +9,13 @@
 <body id="<%= controller.controller_name %>" class="<%= controller.action_name %>">
 <div id="wrapper">
 <div id="top_strip">
-  <% if player_signed_in? %>
-    <p>Your are signed in as <%= current_player.email %>:  <%= link_to 'Sign Out', destroy_player_session_path %></p>
-  <% else -%>
-   <p>You are not logged in: <%= link_to 'Sign In', new_player_session_path %> or <%= link_to 'Register', new_player_registration_path %></p>
-  <% end %>
+  <div class="container_16 clearfix"> 
+    <% if player_signed_in? %>
+      <p class="text_right">You are signed in as <strong><%= current_player.email %></a>:  <%= link_to 'Sign Out', destroy_player_session_path %></p>
+    <% else -%>
+     <p class="text_right">You are not logged in: <%= link_to 'Sign In', new_player_session_path %> or <%= link_to 'Register', new_player_registration_path %></p>
+    <% end %>
+  </div>
 </div>
   <div id="header" class="clearfix">
     <div class="container_16 clearfix"> 

@@ -34,6 +34,18 @@ html body span.clear {
 #header {
   background : #292f40; }
 
+.left {
+	float : left;
+}
+
+.right {
+	float : right;
+}
+
+.text_right {
+	text-align : right;
+}
+
 body {
   background : #292f40 ;
 }
@@ -69,19 +81,21 @@ strong {
 #top_strip {
   background : #1b1f2e;
   height : 24px;
-  font-size : 11px;
+  font-size : 10px;
   padding-top : 6px;
   letter-spacing : 0.5px }
 
-#top_strip, #top_strip a {
-  color : #81756d }
+#top_strip {
+  color : #fff; }
 
 #top_strip a {
+	color : #fb3950;
+	font-family : "museo-bold", "Helvetica Neue",arial;
   text-decoration : none;
   padding : 6px 0 8px 0 }
 
 #top_strip a:hover {
-  color : #73d2b7 }
+  text-decoration : underline; }
 
 #top_strip span {
   margin : 0 4px;
@@ -315,7 +329,6 @@ img.player_pic {
 
 .latest_result .home_player .score {
 	float : right;  }
-
 
 .latest_result .player {
 	float : left;
