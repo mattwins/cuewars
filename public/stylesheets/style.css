@@ -151,7 +151,7 @@ strong {
 
 #nav li.last a {
 	border-right : none;
-	padding-right : 0; }
+	margin-right : -20px; }
 	
 #nav li a:hover {
 	background : #4b5060;
