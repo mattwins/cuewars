@@ -1,4 +1,4 @@
-class Admin::LeaguesController < ApplicationController
+class Account::LeaguesController < ApplicationController
   # GET /leagues
   # GET /leagues.xml
   def index
@@ -44,7 +44,7 @@ class Admin::LeaguesController < ApplicationController
 
     respond_to do |format|
       if @league.save
-        format.html { redirect_to([:admin, @league], :notice => 'League was successfully created.') }
+        format.html { redirect_to([:account, @league], :notice => 'League was successfully created.') }
         format.xml  { render :xml => @league, :status => :created, :location => @league }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class Admin::LeaguesController < ApplicationController
     params[:league][:player_ids] ||= []
     respond_to do |format|
       if @league.update_attributes(params[:league])
-        format.html { redirect_to([:admin, @league], :notice => 'League was successfully updated.') }
+        format.html { redirect_to([:account, @league], :notice => 'League was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

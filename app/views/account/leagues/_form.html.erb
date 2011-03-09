@@ -1,4 +1,4 @@
-<%= form_for([:admin, @league]) do |f| %>
+<%= form_for([:account, @league]) do |f| %>
   <% if @league.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@league.errors.count, "error") %> prohibited this league from being saved:</h2>

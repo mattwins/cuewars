@@ -17,13 +17,13 @@
     <td><%= league.start %></td>
     <td><%= league.end %></td>
     <td><%= league.description %></td>
-    <td><%= link_to 'Show', [:admin, league] %></td>
-    <td><%= link_to 'Edit', edit_admin_league_path(league) %></td>
-    <td><%= link_to 'Destroy', [:admin, league], :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', [:account, league] %></td>
+    <td><%= link_to 'Edit', edit_account_league_path(league) %></td>
+    <td><%= link_to 'Destroy', [:account, league], :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New League', new_admin_league_path %>
+<%= link_to 'New League', new_account_league_path %>

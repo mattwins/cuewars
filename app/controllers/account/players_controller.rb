@@ -1,4 +1,4 @@
-class Admin::PlayersController < ApplicationController
+class Account::PlayersController < ApplicationController
   # GET /players
   # GET /players.xml
   def index
@@ -44,7 +44,7 @@ class Admin::PlayersController < ApplicationController
 
     respond_to do |format|
       if @player.save
-        format.html { redirect_to([:admin, @player], :notice => 'Player was successfully created.') }
+        format.html { redirect_to([:account, @player], :notice => 'Player was successfully created.') }
         format.xml  { render :xml => @player, :status => :created, :location => @player }
       else
         format.html { render :action => "new" }
@@ -61,7 +61,7 @@ class Admin::PlayersController < ApplicationController
 
     respond_to do |format|
       if @player.update_attributes(params[:player])
-        format.html { redirect_to([:admin, @player], :notice => 'Player was successfully updated.') }
+        format.html { redirect_to([:account, @player], :notice => 'Player was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

@@ -1,4 +1,4 @@
-class AdminController < ActionController::Base
+class AccountController < ActionController::Base
   protect_from_forgery
   
   layout 'application'
