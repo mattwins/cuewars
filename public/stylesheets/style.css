@@ -81,12 +81,12 @@ strong {
 #top_strip {
   background : #1b1f2e;
   height : 24px;
-  font-size : 10px;
   padding-top : 6px;
   letter-spacing : 0.5px }
 
-#top_strip {
-  color : #fff; }
+#top_strip p {
+  color : #fff;
+  font-size : 12px; }
 
 #top_strip a {
 	color : #fb3950;
